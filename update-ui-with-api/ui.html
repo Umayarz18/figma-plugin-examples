@@ -1,0 +1,17 @@
+<h2>Update Pokemon UI</h2>
+<p>Select the UI frame that contains the Pokemon UI that needs to be updated</p>
+  <div>
+    <button id="updateRandom">Get random Pokemon data</button>
+    <button id="cancel">Cancel</button>
+  </div>
+<script>
+
+document.getElementById('updateRandom').onclick = () => {
+  
+  parent.postMessage({ pluginMessage: { type: 'update-random' } }, '*')
+}
+
+document.getElementById('cancel').onclick = () => {
+  parent.postMessage({ pluginMessage: { type: 'cancel' } }, '*')
+}
+</script>

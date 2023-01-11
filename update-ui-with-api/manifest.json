@@ -1,0 +1,13 @@
+{
+  "name": "update-ui-with-api",
+  "id": "1194116794017202491",
+  "api": "1.0.0",
+  "main": "code.js",
+  "editorType": [
+    "figma"
+  ],
+  "ui": "ui.html",
+  "menu": [
+    { "name": "Update UI", "command": "update-random"}
+  ]
+}
